@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A3FC3BE1B414258000D1B6E /* DetailMenuEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FC3BD1B414258000D1B6E /* DetailMenuEntry.m */; };
+		1A3FC3C21B42BA03000D1B6E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FC3C11B42BA03000D1B6E /* UIImage+Sprite.m */; };
+		1A3FC3C51B42BA74000D1B6E /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FC3C41B42BA74000D1B6E /* Sprite.m */; };
+		1A3FC3C91B42CDE5000D1B6E /* categories.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FC3C81B42CDE5000D1B6E /* categories.png */; };
 		1AA412A91B31638A0072A121 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412A81B31638A0072A121 /* main.m */; };
 		1AA412AC1B31638A0072A121 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412AB1B31638A0072A121 /* AppDelegate.m */; };
 		1AA412AF1B31638A0072A121 /* SmartReceipt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412AD1B31638A0072A121 /* SmartReceipt.xcdatamodeld */; };
@@ -55,6 +58,11 @@
 		1A3FC3BB1B4111B7000D1B6E /* UIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		1A3FC3BC1B414258000D1B6E /* DetailMenuEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailMenuEntry.h; path = Layout/DetailMenuEntry.h; sourceTree = "<group>"; };
 		1A3FC3BD1B414258000D1B6E /* DetailMenuEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailMenuEntry.m; path = Layout/DetailMenuEntry.m; sourceTree = "<group>"; };
+		1A3FC3C01B42BA03000D1B6E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Sprite.h"; path = "ImageHandling/UIImage+Sprite.h"; sourceTree = "<group>"; };
+		1A3FC3C11B42BA03000D1B6E /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Sprite.m"; path = "ImageHandling/UIImage+Sprite.m"; sourceTree = "<group>"; };
+		1A3FC3C31B42BA74000D1B6E /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sprite.h; path = ImageHandling/Sprite.h; sourceTree = "<group>"; };
+		1A3FC3C41B42BA74000D1B6E /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sprite.m; path = ImageHandling/Sprite.m; sourceTree = "<group>"; };
+		1A3FC3C81B42CDE5000D1B6E /* categories.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = categories.png; path = Assets/Images/categories.png; sourceTree = "<group>"; };
 		1AA412A31B31638A0072A121 /* SmartReceipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartReceipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA412A71B31638A0072A121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA412A81B31638A0072A121 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +130,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A3FC3BF1B42B9BD000D1B6E /* ImageHandling */ = {
+			isa = PBXGroup;
+			children = (
+				1A3FC3C01B42BA03000D1B6E /* UIImage+Sprite.h */,
+				1A3FC3C11B42BA03000D1B6E /* UIImage+Sprite.m */,
+				1A3FC3C31B42BA74000D1B6E /* Sprite.h */,
+				1A3FC3C41B42BA74000D1B6E /* Sprite.m */,
+			);
+			name = ImageHandling;
+			sourceTree = "<group>";
+		};
 		1AA4129A1B31638A0072A121 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +175,7 @@
 				1AA412A61B31638A0072A121 /* Supporting Files */,
 				1AA412DE1B344BF30072A121 /* Data */,
 				1AA412DA1B344AB40072A121 /* DataManager */,
+				1A3FC3BF1B42B9BD000D1B6E /* ImageHandling */,
 				1A3FC3BB1B4111B7000D1B6E /* UIConstants.h */,
 			);
 			path = SmartReceipt;
@@ -191,6 +211,7 @@
 		1AA412D21B3165E30072A121 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A3FC3C81B42CDE5000D1B6E /* categories.png */,
 				1AA412B91B31638A0072A121 /* Images.xcassets */,
 				1AA413071B3A91330072A121 /* receipt.png */,
 				1AA412D41B31663B0072A121 /* maxresdefault.jpg */,
@@ -358,6 +379,7 @@
 				1AA412F61B39771A0072A121 /* navbar_bg@2x.png in Resources */,
 				1AA413011B397D130072A121 /* common_bg.png in Resources */,
 				1AA412F51B39771A0072A121 /* navbar_bg.png in Resources */,
+				1A3FC3C91B42CDE5000D1B6E /* categories.png in Resources */,
 				1AA412F11B39768F0072A121 /* cell_top.png in Resources */,
 				1AA413081B3A91330072A121 /* receipt.png in Resources */,
 				1AA412F21B39768F0072A121 /* cell_top@2x.png in Resources */,
@@ -383,6 +405,7 @@
 				1AA412E11B344C120072A121 /* Receipt.m in Sources */,
 				1AA412E61B34A9490072A121 /* ReceiptCategory.m in Sources */,
 				1AA412B51B31638A0072A121 /* DetailViewController.m in Sources */,
+				1A3FC3C21B42BA03000D1B6E /* UIImage+Sprite.m in Sources */,
 				1AA4130B1B3A94900072A121 /* Receipt+Extended.m in Sources */,
 				1AA412B21B31638A0072A121 /* MasterViewController.m in Sources */,
 				1AA412D91B33E5420072A121 /* CoreDataManager.m in Sources */,
@@ -391,6 +414,7 @@
 				1AA412AC1B31638A0072A121 /* AppDelegate.m in Sources */,
 				1AA412DD1B344ADD0072A121 /* CoreDataReceiptManager.m in Sources */,
 				1AA413111B3C51EC0072A121 /* ReceiptViewCell.m in Sources */,
+				1A3FC3C51B42BA74000D1B6E /* Sprite.m in Sources */,
 				1AA412A91B31638A0072A121 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

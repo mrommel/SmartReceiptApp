@@ -15,6 +15,9 @@
 
 #import "ReceiptViewCell.h"
 
+#import "Sprite.h"
+#import "UIImage+Sprite.h"
+
 @interface MasterViewController () {
     BOOL _isEditing;
 }
@@ -55,10 +58,12 @@
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                                                   target:self
                                                                                   action:@selector(cancelFilter:)];
-    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"Item0"
-                                                              style:UIBarButtonItemStylePlain
-                                                             target:self
-                                                             action:@selector(insertNewObject:)];
+    Sprite *categorySprite = [[Sprite alloc] initWithFilename:@"categories.png" andTiles:CGSizeMake(3, 4)];
+    UIImage *categoryImage0 = [categorySprite imageForIndex:0];
+    UIImage *categoryTile0 = [categoryImage0 resizedImageByWidth:20];
+    
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithImage:categoryTile0 style:UIBarButtonItemStylePlain target:self action:@selector(insertNewObject:)];
+    item1.image = [item1.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithTitle:@"Item1"
                                                               style:UIBarButtonItemStylePlain
