@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3FC3BE1B414258000D1B6E /* DetailMenuEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FC3BD1B414258000D1B6E /* DetailMenuEntry.m */; };
+		1AA412A91B31638A0072A121 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412A81B31638A0072A121 /* main.m */; };
+		1AA412AC1B31638A0072A121 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412AB1B31638A0072A121 /* AppDelegate.m */; };
+		1AA412AF1B31638A0072A121 /* SmartReceipt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412AD1B31638A0072A121 /* SmartReceipt.xcdatamodeld */; };
+		1AA412B21B31638A0072A121 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412B11B31638A0072A121 /* MasterViewController.m */; };
+		1AA412B51B31638A0072A121 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412B41B31638A0072A121 /* DetailViewController.m */; };
+		1AA412B81B31638A0072A121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412B61B31638A0072A121 /* Main.storyboard */; };
+		1AA412BA1B31638A0072A121 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412B91B31638A0072A121 /* Images.xcassets */; };
+		1AA412BD1B31638A0072A121 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412BB1B31638A0072A121 /* LaunchScreen.xib */; };
+		1AA412C91B31638A0072A121 /* SmartReceiptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412C81B31638A0072A121 /* SmartReceiptTests.m */; };
+		1AA412D51B31663B0072A121 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412D41B31663B0072A121 /* maxresdefault.jpg */; };
+		1AA412D91B33E5420072A121 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412D81B33E5420072A121 /* CoreDataManager.m */; };
+		1AA412DD1B344ADD0072A121 /* CoreDataReceiptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412DC1B344ADD0072A121 /* CoreDataReceiptManager.m */; };
+		1AA412E11B344C120072A121 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412E01B344C120072A121 /* Receipt.m */; };
+		1AA412E31B34A3700072A121 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA412E21B34A3700072A121 /* CoreData.framework */; };
+		1AA412E61B34A9490072A121 /* ReceiptCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA412E51B34A9490072A121 /* ReceiptCategory.m */; };
+		1AA412ED1B39768F0072A121 /* cell_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412E71B39768F0072A121 /* cell_bottom.png */; };
+		1AA412EE1B39768F0072A121 /* cell_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412E81B39768F0072A121 /* cell_bottom@2x.png */; };
+		1AA412EF1B39768F0072A121 /* cell_middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412E91B39768F0072A121 /* cell_middle.png */; };
+		1AA412F01B39768F0072A121 /* cell_middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412EA1B39768F0072A121 /* cell_middle@2x.png */; };
+		1AA412F11B39768F0072A121 /* cell_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412EB1B39768F0072A121 /* cell_top.png */; };
+		1AA412F21B39768F0072A121 /* cell_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412EC1B39768F0072A121 /* cell_top@2x.png */; };
+		1AA412F51B39771A0072A121 /* navbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412F31B39771A0072A121 /* navbar_bg.png */; };
+		1AA412F61B39771A0072A121 /* navbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412F41B39771A0072A121 /* navbar_bg@2x.png */; };
+		1AA413011B397D130072A121 /* common_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA412FF1B397D130072A121 /* common_bg.png */; };
+		1AA413021B397D130072A121 /* common_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA413001B397D130072A121 /* common_bg@2x.png */; };
+		1AA413051B397FB90072A121 /* button_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA413031B397FB90072A121 /* button_back.png */; };
+		1AA413061B397FB90072A121 /* button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA413041B397FB90072A121 /* button_normal.png */; };
+		1AA413081B3A91330072A121 /* receipt.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA413071B3A91330072A121 /* receipt.png */; };
+		1AA4130B1B3A94900072A121 /* Receipt+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4130A1B3A94900072A121 /* Receipt+Extended.m */; };
+		1AA4130D1B3C4DD10072A121 /* ReceiptViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA4130C1B3C4DD10072A121 /* ReceiptViewCell.xib */; };
+		1AA413111B3C51EC0072A121 /* ReceiptViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA413101B3C51EC0072A121 /* ReceiptViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AA412C31B31638A0072A121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA4129B1B31638A0072A121 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AA412A21B31638A0072A121;
+			remoteInfo = SmartReceipt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A3FC3BB1B4111B7000D1B6E /* UIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		1A3FC3BC1B414258000D1B6E /* DetailMenuEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailMenuEntry.h; path = Layout/DetailMenuEntry.h; sourceTree = "<group>"; };
+		1A3FC3BD1B414258000D1B6E /* DetailMenuEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailMenuEntry.m; path = Layout/DetailMenuEntry.m; sourceTree = "<group>"; };
+		1AA412A31B31638A0072A121 /* SmartReceipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartReceipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA412A71B31638A0072A121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA412A81B31638A0072A121 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AA412AA1B31638A0072A121 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AA412AB1B31638A0072A121 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AA412AE1B31638A0072A121 /* SmartReceipt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartReceipt.xcdatamodel; sourceTree = "<group>"; };
+		1AA412B01B31638A0072A121 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1AA412B11B31638A0072A121 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1AA412B31B31638A0072A121 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1AA412B41B31638A0072A121 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1AA412B71B31638A0072A121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AA412B91B31638A0072A121 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AA412BC1B31638A0072A121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1AA412C21B31638A0072A121 /* SmartReceiptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartReceiptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA412C71B31638A0072A121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA412C81B31638A0072A121 /* SmartReceiptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartReceiptTests.m; sourceTree = "<group>"; };
+		1AA412D41B31663B0072A121 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = maxresdefault.jpg; path = Assets/Images/maxresdefault.jpg; sourceTree = "<group>"; };
+		1AA412D71B33E5420072A121 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		1AA412D81B33E5420072A121 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		1AA412DB1B344ADD0072A121 /* CoreDataReceiptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataReceiptManager.h; path = DataManager/CoreDataReceiptManager.h; sourceTree = "<group>"; };
+		1AA412DC1B344ADD0072A121 /* CoreDataReceiptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataReceiptManager.m; path = DataManager/CoreDataReceiptManager.m; sourceTree = "<group>"; };
+		1AA412DF1B344C120072A121 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Receipt.h; path = Data/Receipt.h; sourceTree = "<group>"; };
+		1AA412E01B344C120072A121 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Receipt.m; path = Data/Receipt.m; sourceTree = "<group>"; };
+		1AA412E21B34A3700072A121 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1AA412E41B34A9490072A121 /* ReceiptCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptCategory.h; path = Data/ReceiptCategory.h; sourceTree = "<group>"; };
+		1AA412E51B34A9490072A121 /* ReceiptCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptCategory.m; path = Data/ReceiptCategory.m; sourceTree = "<group>"; };
+		1AA412E71B39768F0072A121 /* cell_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell_bottom.png; path = Assets/Images/cell_bottom.png; sourceTree = "<group>"; };
+		1AA412E81B39768F0072A121 /* cell_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cell_bottom@2x.png"; path = "Assets/Images/cell_bottom@2x.png"; sourceTree = "<group>"; };
+		1AA412E91B39768F0072A121 /* cell_middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell_middle.png; path = Assets/Images/cell_middle.png; sourceTree = "<group>"; };
+		1AA412EA1B39768F0072A121 /* cell_middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cell_middle@2x.png"; path = "Assets/Images/cell_middle@2x.png"; sourceTree = "<group>"; };
+		1AA412EB1B39768F0072A121 /* cell_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell_top.png; path = Assets/Images/cell_top.png; sourceTree = "<group>"; };
+		1AA412EC1B39768F0072A121 /* cell_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cell_top@2x.png"; path = "Assets/Images/cell_top@2x.png"; sourceTree = "<group>"; };
+		1AA412F31B39771A0072A121 /* navbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbar_bg.png; path = Assets/Images/navbar_bg.png; sourceTree = "<group>"; };
+		1AA412F41B39771A0072A121 /* navbar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar_bg@2x.png"; path = "Assets/Images/navbar_bg@2x.png"; sourceTree = "<group>"; };
+		1AA412F71B3977570072A121 /* button_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_back.png; path = Assets/Images/button_back.png; sourceTree = "<group>"; };
+		1AA412F81B3977570072A121 /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_normal.png; path = Assets/Images/button_normal.png; sourceTree = "<group>"; };
+		1AA412FF1B397D130072A121 /* common_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = common_bg.png; path = Assets/Images/common_bg.png; sourceTree = "<group>"; };
+		1AA413001B397D130072A121 /* common_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "common_bg@2x.png"; path = "Assets/Images/common_bg@2x.png"; sourceTree = "<group>"; };
+		1AA413031B397FB90072A121 /* button_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_back.png; path = Assets/Images/button_back.png; sourceTree = "<group>"; };
+		1AA413041B397FB90072A121 /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_normal.png; path = Assets/Images/button_normal.png; sourceTree = "<group>"; };
+		1AA413071B3A91330072A121 /* receipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receipt.png; path = Assets/Images/receipt.png; sourceTree = "<group>"; };
+		1AA413091B3A94900072A121 /* Receipt+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Receipt+Extended.h"; path = "Data/Receipt+Extended.h"; sourceTree = "<group>"; };
+		1AA4130A1B3A94900072A121 /* Receipt+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Receipt+Extended.m"; path = "Data/Receipt+Extended.m"; sourceTree = "<group>"; };
+		1AA4130C1B3C4DD10072A121 /* ReceiptViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptViewCell.xib; sourceTree = "<group>"; };
+		1AA4130F1B3C51EC0072A121 /* ReceiptViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptViewCell.h; path = Layout/ReceiptViewCell.h; sourceTree = "<group>"; };
+		1AA413101B3C51EC0072A121 /* ReceiptViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptViewCell.m; path = Layout/ReceiptViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AA412A01B31638A0072A121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA412E31B34A3700072A121 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA412BF1B31638A0072A121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AA4129A1B31638A0072A121 = {
+			isa = PBXGroup;
+			children = (
+				1AA412A51B31638A0072A121 /* SmartReceipt */,
+				1AA412C51B31638A0072A121 /* SmartReceiptTests */,
+				1AA412A41B31638A0072A121 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AA412A41B31638A0072A121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412A31B31638A0072A121 /* SmartReceipt.app */,
+				1AA412C21B31638A0072A121 /* SmartReceiptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA412A51B31638A0072A121 /* SmartReceipt */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412AA1B31638A0072A121 /* AppDelegate.h */,
+				1AA412AB1B31638A0072A121 /* AppDelegate.m */,
+				1AA412B01B31638A0072A121 /* MasterViewController.h */,
+				1AA412B11B31638A0072A121 /* MasterViewController.m */,
+				1AA412B31B31638A0072A121 /* DetailViewController.h */,
+				1AA412B41B31638A0072A121 /* DetailViewController.m */,
+				1AA412B61B31638A0072A121 /* Main.storyboard */,
+				1AA412BB1B31638A0072A121 /* LaunchScreen.xib */,
+				1AA4130E1B3C51BD0072A121 /* Layout */,
+				1AA412D31B3165F20072A121 /* Assets */,
+				1AA412A61B31638A0072A121 /* Supporting Files */,
+				1AA412DE1B344BF30072A121 /* Data */,
+				1AA412DA1B344AB40072A121 /* DataManager */,
+				1A3FC3BB1B4111B7000D1B6E /* UIConstants.h */,
+			);
+			path = SmartReceipt;
+			sourceTree = "<group>";
+		};
+		1AA412A61B31638A0072A121 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412E21B34A3700072A121 /* CoreData.framework */,
+				1AA412A71B31638A0072A121 /* Info.plist */,
+				1AA412A81B31638A0072A121 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AA412C51B31638A0072A121 /* SmartReceiptTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412C81B31638A0072A121 /* SmartReceiptTests.m */,
+				1AA412C61B31638A0072A121 /* Supporting Files */,
+			);
+			path = SmartReceiptTests;
+			sourceTree = "<group>";
+		};
+		1AA412C61B31638A0072A121 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412C71B31638A0072A121 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AA412D21B3165E30072A121 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412B91B31638A0072A121 /* Images.xcassets */,
+				1AA413071B3A91330072A121 /* receipt.png */,
+				1AA412D41B31663B0072A121 /* maxresdefault.jpg */,
+				1AA412E71B39768F0072A121 /* cell_bottom.png */,
+				1AA412E81B39768F0072A121 /* cell_bottom@2x.png */,
+				1AA412E91B39768F0072A121 /* cell_middle.png */,
+				1AA412EA1B39768F0072A121 /* cell_middle@2x.png */,
+				1AA412EB1B39768F0072A121 /* cell_top.png */,
+				1AA412EC1B39768F0072A121 /* cell_top@2x.png */,
+				1AA412F31B39771A0072A121 /* navbar_bg.png */,
+				1AA412F41B39771A0072A121 /* navbar_bg@2x.png */,
+				1AA412F71B3977570072A121 /* button_back.png */,
+				1AA412F81B3977570072A121 /* button_normal.png */,
+				1AA412FF1B397D130072A121 /* common_bg.png */,
+				1AA413001B397D130072A121 /* common_bg@2x.png */,
+				1AA413031B397FB90072A121 /* button_back.png */,
+				1AA413041B397FB90072A121 /* button_normal.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1AA412D31B3165F20072A121 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412D61B3167390072A121 /* Database */,
+				1AA412D21B3165E30072A121 /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		1AA412D61B3167390072A121 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412AD1B31638A0072A121 /* SmartReceipt.xcdatamodeld */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		1AA412DA1B344AB40072A121 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412D71B33E5420072A121 /* CoreDataManager.h */,
+				1AA412D81B33E5420072A121 /* CoreDataManager.m */,
+				1AA412DB1B344ADD0072A121 /* CoreDataReceiptManager.h */,
+				1AA412DC1B344ADD0072A121 /* CoreDataReceiptManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		1AA412DE1B344BF30072A121 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1AA412DF1B344C120072A121 /* Receipt.h */,
+				1AA412E01B344C120072A121 /* Receipt.m */,
+				1AA412E41B34A9490072A121 /* ReceiptCategory.h */,
+				1AA412E51B34A9490072A121 /* ReceiptCategory.m */,
+				1AA413091B3A94900072A121 /* Receipt+Extended.h */,
+				1AA4130A1B3A94900072A121 /* Receipt+Extended.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1AA4130E1B3C51BD0072A121 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				1A3FC3BC1B414258000D1B6E /* DetailMenuEntry.h */,
+				1A3FC3BD1B414258000D1B6E /* DetailMenuEntry.m */,
+				1AA4130F1B3C51EC0072A121 /* ReceiptViewCell.h */,
+				1AA413101B3C51EC0072A121 /* ReceiptViewCell.m */,
+				1AA4130C1B3C4DD10072A121 /* ReceiptViewCell.xib */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AA412A21B31638A0072A121 /* SmartReceipt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA412CC1B31638A0072A121 /* Build configuration list for PBXNativeTarget "SmartReceipt" */;
+			buildPhases = (
+				1AA4129F1B31638A0072A121 /* Sources */,
+				1AA412A01B31638A0072A121 /* Frameworks */,
+				1AA412A11B31638A0072A121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartReceipt;
+			productName = SmartReceipt;
+			productReference = 1AA412A31B31638A0072A121 /* SmartReceipt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AA412C11B31638A0072A121 /* SmartReceiptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA412CF1B31638A0072A121 /* Build configuration list for PBXNativeTarget "SmartReceiptTests" */;
+			buildPhases = (
+				1AA412BE1B31638A0072A121 /* Sources */,
+				1AA412BF1B31638A0072A121 /* Frameworks */,
+				1AA412C01B31638A0072A121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AA412C41B31638A0072A121 /* PBXTargetDependency */,
+			);
+			name = SmartReceiptTests;
+			productName = SmartReceiptTests;
+			productReference = 1AA412C21B31638A0072A121 /* SmartReceiptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AA4129B1B31638A0072A121 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Michael Rommel";
+				TargetAttributes = {
+					1AA412A21B31638A0072A121 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					1AA412C11B31638A0072A121 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 1AA412A21B31638A0072A121;
+					};
+				};
+			};
+			buildConfigurationList = 1AA4129E1B31638A0072A121 /* Build configuration list for PBXProject "SmartReceipt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AA4129A1B31638A0072A121;
+			productRefGroup = 1AA412A41B31638A0072A121 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AA412A21B31638A0072A121 /* SmartReceipt */,
+				1AA412C11B31638A0072A121 /* SmartReceiptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AA412A11B31638A0072A121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA413061B397FB90072A121 /* button_normal.png in Resources */,
+				1AA412B81B31638A0072A121 /* Main.storyboard in Resources */,
+				1AA412EE1B39768F0072A121 /* cell_bottom@2x.png in Resources */,
+				1AA412EF1B39768F0072A121 /* cell_middle.png in Resources */,
+				1AA413051B397FB90072A121 /* button_back.png in Resources */,
+				1AA412D51B31663B0072A121 /* maxresdefault.jpg in Resources */,
+				1AA412BD1B31638A0072A121 /* LaunchScreen.xib in Resources */,
+				1AA412F01B39768F0072A121 /* cell_middle@2x.png in Resources */,
+				1AA4130D1B3C4DD10072A121 /* ReceiptViewCell.xib in Resources */,
+				1AA412ED1B39768F0072A121 /* cell_bottom.png in Resources */,
+				1AA412F61B39771A0072A121 /* navbar_bg@2x.png in Resources */,
+				1AA413011B397D130072A121 /* common_bg.png in Resources */,
+				1AA412F51B39771A0072A121 /* navbar_bg.png in Resources */,
+				1AA412F11B39768F0072A121 /* cell_top.png in Resources */,
+				1AA413081B3A91330072A121 /* receipt.png in Resources */,
+				1AA412F21B39768F0072A121 /* cell_top@2x.png in Resources */,
+				1AA413021B397D130072A121 /* common_bg@2x.png in Resources */,
+				1AA412BA1B31638A0072A121 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA412C01B31638A0072A121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AA4129F1B31638A0072A121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA412E11B344C120072A121 /* Receipt.m in Sources */,
+				1AA412E61B34A9490072A121 /* ReceiptCategory.m in Sources */,
+				1AA412B51B31638A0072A121 /* DetailViewController.m in Sources */,
+				1AA4130B1B3A94900072A121 /* Receipt+Extended.m in Sources */,
+				1AA412B21B31638A0072A121 /* MasterViewController.m in Sources */,
+				1AA412D91B33E5420072A121 /* CoreDataManager.m in Sources */,
+				1A3FC3BE1B414258000D1B6E /* DetailMenuEntry.m in Sources */,
+				1AA412AF1B31638A0072A121 /* SmartReceipt.xcdatamodeld in Sources */,
+				1AA412AC1B31638A0072A121 /* AppDelegate.m in Sources */,
+				1AA412DD1B344ADD0072A121 /* CoreDataReceiptManager.m in Sources */,
+				1AA413111B3C51EC0072A121 /* ReceiptViewCell.m in Sources */,
+				1AA412A91B31638A0072A121 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA412BE1B31638A0072A121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA412C91B31638A0072A121 /* SmartReceiptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AA412C41B31638A0072A121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AA412A21B31638A0072A121 /* SmartReceipt */;
+			targetProxy = 1AA412C31B31638A0072A121 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AA412B61B31638A0072A121 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AA412B71B31638A0072A121 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AA412BB1B31638A0072A121 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AA412BC1B31638A0072A121 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AA412CA1B31638A0072A121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AA412CB1B31638A0072A121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AA412CD1B31638A0072A121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartReceipt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AA412CE1B31638A0072A121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartReceipt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1AA412D01B31638A0072A121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartReceiptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartReceipt.app/SmartReceipt";
+			};
+			name = Debug;
+		};
+		1AA412D11B31638A0072A121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartReceiptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartReceipt.app/SmartReceipt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AA4129E1B31638A0072A121 /* Build configuration list for PBXProject "SmartReceipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AA412CA1B31638A0072A121 /* Debug */,
+				1AA412CB1B31638A0072A121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AA412CC1B31638A0072A121 /* Build configuration list for PBXNativeTarget "SmartReceipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AA412CD1B31638A0072A121 /* Debug */,
+				1AA412CE1B31638A0072A121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AA412CF1B31638A0072A121 /* Build configuration list for PBXNativeTarget "SmartReceiptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AA412D01B31638A0072A121 /* Debug */,
+				1AA412D11B31638A0072A121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AA412AD1B31638A0072A121 /* SmartReceipt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AA412AE1B31638A0072A121 /* SmartReceipt.xcdatamodel */,
+			);
+			currentVersion = 1AA412AE1B31638A0072A121 /* SmartReceipt.xcdatamodel */;
+			path = SmartReceipt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1AA4129B1B31638A0072A121 /* Project object */;
+}

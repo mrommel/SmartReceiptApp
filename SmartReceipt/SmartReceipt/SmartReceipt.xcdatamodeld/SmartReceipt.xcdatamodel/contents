@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="v1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Receipt" representedClassName="Receipt">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <relationship name="category_relation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ReceiptCategory" inverseName="receipt_relation" inverseEntity="ReceiptCategory" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="ReceiptCategory" representedClassName="ReceiptCategory" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="receipt_relation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Receipt" inverseName="category_relation" inverseEntity="Receipt" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Receipt" positionX="261" positionY="189" width="128" height="120"/>
+        <element name="ReceiptCategory" positionX="261" positionY="207" width="128" height="75"/>
+    </elements>
+</model>
