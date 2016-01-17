@@ -59,6 +59,13 @@
                                                                                   target:self
                                                                                   action:@selector(cancelFilter:)];
     Sprite *categorySprite = [[Sprite alloc] initWithFilename:@"categories.png" andTiles:CGSizeMake(3, 4)];
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 12; i++) {
+        UIImage *categoryImage = [categorySprite imageForIndex:i];
+        [array addObject:categoryImage];
+    }
+    
     UIImage *categoryImage0 = [categorySprite imageForIndex:0];
     UIImage *categoryTile0 = [categoryImage0 resizedImageByWidth:20];
     
